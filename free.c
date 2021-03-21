@@ -1,4 +1,4 @@
-//Author Name:Suryansh sharma
+//Author Name:Hrithik koul
 //Creation Date: 20th March 2021
 //Purpose:To demonstrate the use of free()
 #include <stdio.h> //Preprocessive directive to include input output functions header file
