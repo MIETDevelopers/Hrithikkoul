@@ -1,5 +1,5 @@
-//Author Name:Hrithik koul
-//Creation Date: 21March 2021
+//Author name: Hrithik koul
+//Creation Date: 21th March 2021
 //Purpose:Write a C program to create Simple Calculator using switch case and function for every operation
 #include<stdio.h>//Preprocessive directive to include input output functions header file
 int main(){//Start of the main body function

@@ -1,5 +1,5 @@
-//Author name :Hrithik1koul
-//Creation date: 21-03-2021
+Author name : Hrithik koul
+//Creation date: 20-03-2021
 //Purpose :To read and print elements in two dimensional array 
 #include<stdio.h>//Preprocessive directive to include input output functions header file
 int main(){//Start of the main body function
