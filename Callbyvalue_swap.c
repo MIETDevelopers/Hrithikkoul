@@ -1,5 +1,5 @@
   
-// Author : Kavya Dhar
+// Author :Hrithik koul
   // Creation Date: 21-03-2021
     // Call by Value Example - Swapping 2 numbers using Call by Value
 #include <stdio.h>
