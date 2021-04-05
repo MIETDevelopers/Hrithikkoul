@@ -1,18 +1,45 @@
-// A C Program demonstrating use of calloc() function.          © Ishav Verma 20/March/2021
-#include <stdio.h> //Using standard input output header file.
-#include <stdlib.h> //Using standard library header file.
-    int main() {
-        int i, * ptr, sum = 0;
-        ptr = calloc(10, sizeof(int));
-        if (ptr == NULL) {
-            printf("Error! memory not allocated.");
-            exit(0);
-        }
-        printf("Building and calculating the sequence sum of the first 10 terms \n ");
-        for (i = 0; i < 10; ++i) { * (ptr + i) = i;
-            sum += * (ptr + i);
-        }
-        printf("Sum = %d", sum);
-        free(ptr);
-        return 0;
-    }
+//Author Name:Hrithik Koul
+//Creation Date: 20th March 2021
+//Purpose:To demonstrate the use of Calloc()
+#include <stdio.h> //Preprocessive directive to include input output functions header file
+#include <stdlib.h> //Preprocessive directive to include standard library header file
+  
+int main(){ //Start of the main body function
+  
+    // This pointer will hold the 
+    // base address of the block created 
+    int* ptr; //pointer declarartion
+    int n, i; //variable declarartion
+  
+    // Get the number of elements for the array 
+    n = 5; // value assignment
+    printf("Enter number of elements: %d\n", n);  //Printf function calling to print Enter number of elements
+  
+    // Dynamically allocate memory using calloc() 
+    ptr = (int*)calloc(n, sizeof(int)); 
+  
+    // Check if the memory has been successfully 
+    // allocated by calloc or not 
+    if (ptr == NULL) { 
+        printf("Memory not allocated.\n"); //Printf function calling to print Memory not allocated.
+        exit(0); 
+    } 
+    else { 
+  
+        // Memory has been successfully allocated 
+        printf("Memory successfully allocated using calloc.\n"); //Printf function calling to print Memory successfully allocated using calloc
+  
+        // Get the elements of the array 
+        for (i = 0; i < n; ++i) { 
+            ptr[i] = i + 1; 
+        } 
+  
+        // Print the elements of the array 
+        printf("The elements of the array are: "); //Printf function calling to print The elements of the array are
+        for (i = 0; i < n; ++i) { 
+            printf("%d, ", ptr[i]); 
+        } 
+    } 
+  
+    return 0; //Return statement
+} //End of main function body
