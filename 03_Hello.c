@@ -1,6 +1,6 @@
 //Author Name: Hrithik koul
 //Creation Date:16-March-2021
-//Purpose:A basic C Program to print Hello World.				© Ishav Verma 18/March/2021
+//Purpose:A basic C Program to print Hello World.				
 //Start
 #include<stdio.h> //Including standard input ouput header files from library.
 int main(){ 
