@@ -1,4 +1,6 @@
-//A C Program to store the information of student marks using structures and find total marks of individual student.
+//Author Name:Hrithik Koul
+//Creation Date:20-march-2021
+//Purpose:A C Pr-march-o store the information of student marks using structures and find total marks of individual student.
 #include <stdio.h>
 struct student {
     char name[50];
