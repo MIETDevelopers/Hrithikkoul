@@ -1,4 +1,4 @@
-//Author name: Suryansh sharma
+//Author name: Hrithik Koul
 //Creation Date: 16-March-2021
 //Purpose: Check whether the alphabet is vowel or consonent
 #include <stdio.h>//Preprocessor directive to include input output function header file
