@@ -1,16 +1,29 @@
-//A C Program to print Fibonacci series using recursion.	 			© Ishav Verma 20/March/2021
-#include<stdio.h>    
-int main(){    
-	int n1=0,n2=1,n3,i,number;    
-	printf("Enter the number of elements: ");    
-	scanf("%d",&number);    
-	printf(" %d %d",n1,n2);//Printing 0 and 1.   
-	for(i=2;i<number;++i)//Loop starts from 2 because 0 and 1 are already printed.   
-		{	//This will give output.
-			n3=n1+n2;    
-  			printf(" %d",n3);    
-  			n1=n2;    
-  			n2=n3;    
- 		}  
-	return 0;  
+//Author Name:Hrithik koul
+//Creation Date: 20th March 2021
+//Purpose:Fibonacci sequence using recursion
+#include<stdio.h>//Preprocessive directive to include input output functions header file
+int main(){//Start of the main body function
+int first=0, second=1, i, n, sum=0;//Declaring variable and Value Assignment
+printf("Enter the number of terms: ");//Printf function calling to print Enter the number of terms
+scanf("%d",&n);//Scanf function calling to input the value given by user
+//accepting the terms
+printf("Fibonacci Series:");//Printf function calling to print Fibonacci Serie
+for(i=0 ; i<n ; i++)
+{
+if(i <= 1)
+{
+sum=i;
 }
+//to print 0 and 1
+else
+{
+sum=first + second;//logic sum =first + second
+first=second;//first is assigned to second
+second=sum;//second is assigned to sum
+//to calculate the remaining terms.
+//value of first and second changes as new term is printed.
+}
+printf(" %d",sum)//printf calling to print sum
+}
+return 0;//return statement
+}//end of main function body
