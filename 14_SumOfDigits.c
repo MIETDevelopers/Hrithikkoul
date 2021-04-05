@@ -1,21 +1,18 @@
-//A C Program to Find Sum of Digits of a Number using While Loop.
-#include <stdio.h>
-int main()
-{
-  int Number, Reminder, Sum=0;
-
-  printf("Please Enter any number\n");
-  scanf("%d", &Number);//This will scan (read) the number entered by user.
-
-  while(Number > 0)//Using while loop.
-  {
-  	//This is the formula to calculate sum of digits.
-     Reminder = Number % 10;
-     Sum = Sum+Reminder;
-     Number = Number / 10;
-  }
-
-  printf("Sum of the digits of Given Number = %d\n", Sum);
-
-  return 0;
-}
+//Author Name:Hrithik Koul
+//Creation Date:20-march-2021
+//Purpose :sum of digit
+#include<stdio.h>  // Pre-Prossive to include standard input and out put header files funtions
+ int main()    
+{    // Start Of mail body
+int n,sum=0,m;    
+printf("Enter a number:");    
+scanf("%d",&n);    
+while(n>0)    // Loop started 
+{    
+m=n%10;    
+sum=sum+m;    
+n=n/10;    
+}    // Loop ended 
+printf("Sum is=%d",sum);   // Printing Sum of Digits 
+return 0;  
+}   
