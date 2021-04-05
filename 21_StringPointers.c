@@ -1,8 +1,10 @@
-//A C Program to read the string in pointers loaction and give it as output.(Pre-Defined) 			© Ishav Verma 19/March/2021
+//Author Name:Hrithik Koul
+//Creation Date: 20-march-2021
+//Purpose:A C Program to read the string in pointers loaction and give it as output.(Pre-Defined) 			
 #include <stdio.h>
 
 int main(void) {
-  char name[] = "Ishav Verma";
+  char name[] = "Hrithik";
 
   printf("%c \n", *name);     	// Output will be I
   printf("%c \n", *(name+3));	// Output will be A
