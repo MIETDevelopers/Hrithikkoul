@@ -1,5 +1,8 @@
-#include<stdio.h>
-int main(){
+//Author Name:Hrithik Koul
+//Creation Date:16-March-2021
+//purpose:program to find Arthmetic operation using addition, subtraction, multiplication and remainder operator 
+#include<stdio.h>//preprocessor directive to inculde standard input output function header file
+int main(){//main function body starts
     char operator;
     double a, b;
     printf("Enter an operator (+, -, *, /):"); //It will print the operater to be entered by user.
@@ -25,5 +28,5 @@ int main(){
             break;
     printf("Error encountered by the input values");
     }
-    return 0;
-}
+    return 0;//return statement
+}//main function body
