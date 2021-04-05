@@ -1,7 +1,9 @@
-//A C Program to check whether the alphabet is Vowel or Consonant.               © Ishav Verma 18/March/2021
+//Author name: Hrithik Koul
+//Creation Date: 16-March-2021
+//Purpose: Check whether the alphabet is vowel or consonent               
 //The letters A, E, I, O and U are called vowels & the remaining ones are calles consonants.
-#include <stdio.h>
-int main() {
+#include <stdio.h>//Preprocessor directive to include input output function header fil
+int main() {//Start of main function bod
     char c;
     int lowercase_vowel, uppercase_vowel;
     printf("Enter an alphabet: \n");
@@ -12,5 +14,5 @@ int main() {
         printf("%c is a vowel.", c);
     else
         printf("%c is a consonant.", c);
-    return 0;
-}
+    return 0; //return statement
+}//End of the main function body
