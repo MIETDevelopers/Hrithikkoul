@@ -1,6 +1,8 @@
-// A C Program representing Binary Search.                  © Ishav Verma 31/March/2021
+//Author Name:Hrithik Koul
+//Creation Date:20-march-2021
+//Purpose: A C Program representing Binary Search.                  
 #include <stdio.h>
-int main(){
+int main(){ //main body function starts
   int c, first, last, middle, n, search, array[100];
 
   printf("Enter number of elements\n");
