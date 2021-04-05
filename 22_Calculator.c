@@ -1,29 +1,32 @@
-#include<stdio.h>
-int main(){
-    char operator;
-    double a, b;
-    printf("Enter an operator (+, -, *, /):"); //It will print the operater to be entered by user.
-    scanf("%c", &operator); //It will scan the operater entered by user.
-    printf("Enter two operands:");
-    scanf("%lf %lf",&a, &b); //It will scan the numbers entered by user.
-    switch(operator) //Switch case is used to perfom the calculation case that is scanned (in line 6) based on user input.
-    {
-        case '+':
-            printf("%.2lf + %.2lf = %.2lf",a, b, a+b); //Addition Function
-            break;
+#//Author name: Hrithik koul
+//Creation Date: 21th March 2021
+//Purpose:Write a C program to create Simple Calculator using switch case and function for every operation
+#include<stdio.h>//Preprocessive directive to include input output functions header file
+int main(){//Start of the main body function
+    char operator;//Declaring variable of character data type 
+    double a, b;//Declaring variables of double data type
+    printf("Enter an operator (+, -, *, /):");//Printf function calling to print an operator
+    scanf("%c", &operator);//Scanf function calling for user input
+    printf("Enter two operands:");//Printf function calling to print two operands
+    scanf("%lf %lf",&a, &b);//Scanf function calling to read user input
+    switch(operator){//Start of Switch case body
+        case '+'://Case 1
+            printf("%.lf + %.lf = %.lf",a, b, a+b);//Printf function calling to print addition of two numbers
+            break;//Break statement
 
-        case '-':
-            printf("%.2lf - %.2lf = %.2lf",a, b, a-b); //Subtraction Function
-            break;
+        case '-'://Case 2
+            printf("%.lf - %.lf = %.lf",a, b, a-b);//Printf function calling to print subtraction of two numbers
+            break;//Break statement
 
-        case '*':
-            printf("%.2lf * %.2lf = %.2lf",a, b, a*b); //Multiplication Function
-            break;
+        case '*'://Case 3
+            printf("%.lf * %.lf = %.lf",a, b, a*b);//Printf function calling to print multiplication of two numbers
+            break;//Break statement
 
-        case '/':
-            printf("%.2lf / %.2lf = %.2lf",a, b, a/b); //Division Function
-            break;
-    printf("Error encountered by the input values");  //Default
+        case '/'://Case 4
+            printf("%.lf / %.lf = %.lf",a, b, a/b);//Printf function calling to print division of two numbers
+            break;//Break statement
+        default:
+            printf("Error!");//Printf function calling to print error!
     }
-    return 0;
-}
+    return 0;//Return statement
+}//End of the main function body
